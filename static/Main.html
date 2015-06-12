@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>__SERVER__</title>
+    <link rel="stylesheet" type="text/css" href="static/Main.css"/>
+    <script type="text/javascript" src="static/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $.getScript("scripts/Main.js");
+    </script>
+</head>
+<body onload="refresh_data()">
+    <div id="container" align="center">
+        <div id="navigation">
+            <button value="create" onclick="button_create()">Create new record</button>
+            <button value="read" onclick="button_read()">Read database</button>
+            <button value="update" onclick="button_update()">Update database</button>
+            <button value="delete" onclick="button_delete()">Delete record</button>
+        </div>
+        <div id="main">
+            <div id="control">
+            </div>
+            <div id="data">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
